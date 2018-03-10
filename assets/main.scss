@@ -1,0 +1,408 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import "minima";
+
+$border-color: #E4E6EB;
+//$xp-color-1: rgb(98, 178, 88);
+//$xp-color-2: rgb(56, 122, 69);
+$xp-color-1: rgb(228, 21, 21);
+$xp-color-2: rgb(228, 21, 21);
+$pagination-color: rgb(70, 70, 70);
+$warning-color:  rgb(240, 57, 57);
+$info-color: #b6b6b6;
+$light-grey: rgb(245, 245, 245);
+
+.info-box {
+    #title {
+        border-radius: 0.4rem 0.4rem 0rem 0rem;
+
+        font-weight: bold;
+        color: #ffffff;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        width: 100%;
+
+        //background: linear-gradient(-135deg, $xp-color-1, $xp-color-2);
+        background-color: $warning-color;
+
+        span {
+            display: inner-block;
+            margin: 1rem;
+        }
+    }
+
+    #info {
+        ul {
+            li {
+                margin-left: 1.5rem;
+                margin-top: 1rem;
+            }
+
+            li:first-child {
+                margin-top: 0;
+            }
+
+            margin: 0;
+        }
+
+        border-radius: 0 0 0.5rem 0.5rem;
+        border: solid 2px $border-color;
+
+        padding: 1rem;
+    }
+
+    width: 100%;
+
+
+    //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.3rem;
+}
+
+#num_of_shops {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.shop-regions {
+    border-top: 1px solid $border-color;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-top: 0.5rem;
+        }
+    
+        li:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.shop-region-partial {
+    a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+
+        padding: 0.5rem 0rem;
+
+        #shop-region-partial-name {
+            padding-left: 1rem;
+        }
+
+        #shop-region-partial-num {
+            color: $info-color;
+    
+            padding: .2em .6em;
+            margin-left: 0.1rem;
+    
+    
+            text-align: center;
+            //font-weight: bold;
+            font-size: 0.85rem;
+            line-height: 1;
+            vertical-align: baseline;
+        }
+    }
+
+    a:hover {
+        background-color: $light-grey;
+    }
+}
+
+.shop-partial {
+    border-bottom: 1px solid $border-color;
+    margin-top: 1rem;
+}
+
+.shop-partial:first-child {
+    border-top: 1px solid $border-color;
+
+    .shop-partial-title {
+        margin-top: 1rem;
+    }
+}
+
+#shop_list-header {
+    h2 {
+      display: inline-block;
+      margin-bottom: 1.5rem;  
+    }
+
+    p {
+        span {
+            font-size: 1.5rem;
+            margin: 0 0.3rem;
+        }
+    }
+}
+
+.shop {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+    border-radius: 0.4rem;
+}
+
+.shop:first-child {
+    margin-top: 0;
+}
+
+.header-icon {
+    height: 10mm;
+    width: 10mm;
+    margin-right: 0.3em;
+}
+
+.xp-value-box {
+    margin-bottom: 1em;
+}
+
+@mixin post-category {
+    padding: 0 .3rem;
+    margin: 0 .1rem;
+    background: $text-color;
+    color: white;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.post-meta {
+    display: block;
+    margin-top: -.3rem;
+    margin-bottom: 1rem;
+    color: #9a9a9a;
+    time {
+        margin-right: .5rem;
+    }
+    .post-categories {
+        display: inline-block;
+        a {
+            @include post-category;
+            font-size: .8rem;
+        }
+    }
+}
+
+.category-cloud {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+        a {
+            @include post-category;
+        }
+    }
+}
+
+.post-summary {
+    border-bottom: solid 1px $border-color;
+}
+
+.post-summary:first-child {
+    border-top: solid 1px $border-color;
+    padding-top: 1em;
+}
+
+#category-post-list-item {
+    margin-top: 0.2em;
+}
+
+.page-heading {
+    margin-top: 2em;
+    padding-left: 0.1em;
+}
+
+.posts-by-categories {
+    margin-top: 1em;
+}
+
+.post-title {
+    font-size: 26pt !important;
+}
+
+.post-header {
+    border-bottom: solid 1px $border-color;
+}
+
+.posts-by-categories {
+    padding-top: 1em;
+    border-top: solid 1px $border-color !important;
+}
+
+.icon--discord > svg {
+    margin-left: -0.1em !important;
+    margin-right: 0.1em !important;
+    width: 20px !important;
+}
+
+.sns-share {
+    display: block;
+    list-style: none;
+    float: right;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.sns-share > li {
+    margin: 0.4em 0.6em;
+    padding: 0.2em;
+    float: right;
+}
+
+$sns-share-font-color: #fefefe;
+
+.sns-share > li > a {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    margin: 0 auto;
+
+    cursor: pointer;
+    color: $sns-share-font-color;
+    font-weight: bold;
+}
+
+$twitter-color: #1dcaff;
+$facebook-color: #3B5998;
+$google-color: #d34836;
+
+$twitter-shadow-color: #0dbaef;
+$facebook-shadow-color: #2B4988;
+$google-shadow-color: #e33826;
+
+.sns-share > li > a:hover {
+    text-decoration: none;
+}
+
+.sns-share > li > .share-button-twitter:hover {
+    color: $twitter-color;
+    background-color: $sns-share-font-color;
+}
+
+.sns-share > li > .share-button-google:hover {
+    color: $google-color;
+    background-color: $sns-share-font-color;
+}
+
+.sns-share > li > .share-button-facebook:hover {
+    color: $facebook-color;
+    background-color: $sns-share-font-color;
+}
+
+.share-button-twitter {
+    background-color: $twitter-color;
+    border: solid 1px $twitter-color;
+}
+
+.share-button-facebook {
+    background-color: $facebook-color;
+    border: solid 1px $facebook-color;
+}
+
+.share-button-google {
+    background-color: $google-color;
+    border: solid 1px $google-color;
+}
+
+.rss-subscribe {
+    margin-top: 1em;
+}
+
+#now-page {
+    width: 100%;
+
+    color: $pagination-color;
+    text-align: center;
+    font-size: 1.5rem;
+
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+
+    span {
+        //font-weight: bold;
+        font-size: 1.8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.3rem;
+    }
+}
+
+#pagination {
+    width: 100%;
+    height: 2.9rem;
+    font-size: 1.3rem;
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $pagination-color;
+
+        float: left;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        border-top: solid 1px $pagination-color;
+        border-bottom: solid 1px $pagination-color;
+        border-left: solid 1px $pagination-color;
+
+        text-align: center;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    a:first-child {
+        border-radius: 0.2rem 0.0rem 0rem 0.2rem;
+    }
+
+    a:last-child {
+        border-right: solid 1px $pagination-color;
+        border-radius: 0rem 0.2rem 0.2rem 0rem;
+    }
+}
+
+.half-width {
+    width: 49%;
+}
+
+.quarter-width {
+    width: 24%;
+}
+
+.hid {
+    color: $text-color !important;
+}
+
+.hid:hover {
+    cursor: default !important;
+    text-decoration: none;
+}
+
+@include media-query($on-palm) {
+    .sns-share > li {
+        margin: 0.4em 0.5em;
+        padding: 0.2em 0;
+    }
+    .sns-share > li > a {
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+}
