@@ -13,53 +13,31 @@ github pagesを使うことによってサーバーを用意する必要がな�
 
 <br>
 ### githubでリポジトリを作成
-リポジトリの名前は`githubID.github.io`という名前にします。
-私の場合IDが`YoritaXP`なので、`YoritaXP.github.io`となります。
+リポジトリの名前は`githubID.github.io`という名前にします。  
+これが生成されるサイトのURLとなるのですが、IDの大文字は小文字となります。  
+私の場合IDが`YoritaXP`なので、`yoritaxp.github.io`となります。
 ![img-01][img-01]
 
 このまま`Create repository`をし、  
 {% highlight bash %}
-$ git clone https://github.com/YoritaXP/YoritaXP.github.io.git  
+$ git clone git@github.com:YoritaXP/yoritap.github.io.git  
 {% endhighlight %}
 でcloneしてください。  
+
+2段階認証関連のエラーはここを参考にしました。  
+- [GithubのDeploy Keysを登録してパスワードなしでアクセスする][lnk-01]
 
 <br>
 ### github-pagesをインストール
 
 前提としてrubyの環境が整ってるものとします。
 ない場合は以下のサイトを参考にしてみてください。
-- [WindowsにRubyをインストールする(初心者向け)][lnk-01]
+- [WindowsにRubyをインストールする(初心者向け)][lnk-02]
 
 github pagesで必要なツールをインストールします。  
 {% highlight bash %}
-$ gem install github-pages -v 102
-$ github-pages -v
-github-pages 102
-$ github-pages versions
-+---------------------------+---------+
-| Gem                       | Version |
-+---------------------------+---------+
-| jekyll                    | 3.3.0   |
-| jekyll-sass-converter     | 1.3.0   |
-| kramdown                  | 1.11.1  |
-| liquid                    | 3.0.6   |
-| rouge                     | 1.11.1  |
-| github-pages-health-check | 1.2.0   |
-| jemoji                    | 0.7.0   |
-| jekyll-mentions           | 1.2.0   |
-| jekyll-redirect-from      | 0.11.0  |
-| jekyll-sitemap            | 0.11.0  |
-| jekyll-feed               | 0.7.2   |
-| jekyll-gist               | 1.4.0   |
-| jekyll-paginate           | 1.1.0   |
-| jekyll-coffeescript       | 1.0.1   |
-| jekyll-seo-tag            | 2.0.0   |
-| jekyll-github-metadata    | 2.2.0   |
-| listen                    | 3.0.6   |
-| activesupport             | 4.2.7   |
-| minima                    | 2.0.0   |
-| jekyll-swiss              | 0.4.0   |
-+---------------------------+---------+
+$ gem install jekyll
+$ gem install bundler
 {% endhighlight %}
 
 <br>
@@ -68,8 +46,6 @@ $ github-pages versions
 フォルダ内にファイルが存在すると上手くいかないみたいなので、  
 別フォルダにJekyllプロジェクトを生成し、ローカルリポジトリに移します。  
 {% highlight bash %}
-$ jekyll -v
-jekyll 3.3.0
 $ jekyll new jekyll-test
 {% endhighlight %}
 これで`jekyll-test`フォルダ内に必要ファイルが生成されたはずです。  
@@ -80,13 +56,14 @@ $ jekyll new jekyll-test
 
 {% highlight bash %}
 $ cd YoritaXP.github.io
-$ jekyll serve
+$ bundle exec jekyll serve
 {% endhighlight %}
 Webブラウザで[http://localhost:4000](http://localhost:4000)にアクセスすると、生成されたページを閲覧することができます。  
 
 [Jekyll]: https://jekyllrb.com/
 [RubyGems]: https://rubygems.org/
-[lnk-01]: https://qiita.com/shimoju/items/41035b213ad0ac3a979e
+[lnk-01]: https://qiita.com/master-of-sugar/items/a9892879f6e9cb9f3c97
+[lnk-02]: https://qiita.com/shimoju/items/41035b213ad0ac3a979e
 
 
 [img-01]: {{site.baseurl}}/images/2018/03/github-pages-new-repository.png
