@@ -1,11 +1,8 @@
 <footer class="site-footer">
 
     <div class="wrapper">
-        {% for thks in site.thanks %}
-            {% assign thk = thks.url %}
-        {% endfor %}
-      
-        <h2 class="footer-heading">{{ site.title | escape }}<a class="hid" href="{{ thk | absolute }}">.</a></h2>
+
+        <h2 class="footer-heading">{{ site.title | escape }}</h2>
   
         <div class="footer-col-wrapper">
             <div class="footer-col footer-col-1">
