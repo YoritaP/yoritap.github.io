@@ -21,7 +21,6 @@ theme: minima
 
 plugins:
  - jekyll-feed
-
 exclude:
  - Gemfile
  - Gemfile.lock
