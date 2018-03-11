@@ -3,8 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
+### Yorita
+- eXperience Points Japan discord moderator
 
-### 開発言語
+### programming skill
 - C/C++  
 - python  
 - ruby  
