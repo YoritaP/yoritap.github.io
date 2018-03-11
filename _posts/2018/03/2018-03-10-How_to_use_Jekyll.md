@@ -28,7 +28,7 @@ $ git clone git@github.com:YoritaXP/yoritap.github.io.git
 - [GithubのDeploy Keysを登録してパスワードなしでアクセスする][lnk-01]
 
 <br>
-### github-pagesをインストール
+### Jekyllをインストール
 
 前提としてrubyの環境が整ってるものとします。
 ない場合は以下のサイトを参考にしてみてください。
