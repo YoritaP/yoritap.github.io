@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll使ったgithub pages"
+title:  "Jekyllを使ったgithub pages"
 date:   2018-03-10 16:40:00 +0900
 categories: jekyll
 ---
