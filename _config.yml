@@ -9,6 +9,7 @@ baseurl: ""
 url: "https://YoritaXP.github.io"
 twitter_username: YoritaXP
 github_username: YoritaXP
+google_analytics: UA-115625516-1
 
 minima:
   date_format: "%Y/%m/%d %H:%M"
