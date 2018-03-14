@@ -22,7 +22,7 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    {{ content | topics_generate }}
   </div>
 
   {% if site.disqus.shortname %}
