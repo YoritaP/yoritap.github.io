@@ -22,7 +22,7 @@ module Jekyll
               return html
             end
             doc.css('body').children.before(topics_html)
-            doc.css('body').children.to_xhtml(indent:3, indent_text:" ")
+            doc.css('body').children.to_xhtml(indent:3, indent_text:"")
         end
 
         def get_topic_info(head)
