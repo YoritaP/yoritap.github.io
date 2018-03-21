@@ -2,7 +2,7 @@
 layout: post
 title:  "XPコミュニティのdiscordリンク"
 date:   2018-03-10 19:00:00 +0900
-categories: XP
+categories: Crypto
 ---
 
 <br>
