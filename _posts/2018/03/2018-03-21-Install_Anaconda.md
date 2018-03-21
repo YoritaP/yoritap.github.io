@@ -71,8 +71,7 @@ $ conda create -n py35 python=3.5 anaconda
 環境が構築できたか確認します。  
 {% highlight bash %}
 $ conda info -e
-# conda environments: 
-# 
+# conda environments:
 base                  *  /root/.pyenv/versions/anaconda3-5.1.0
 py35                     /root/.pyenv/versions/anaconda3-5.1.0/envs/py35
 {% endhighlight %}
@@ -86,7 +85,6 @@ $ source activate py35
 {% highlight bash %}
 $ conda info -e
 # conda environments: 
-# 
 base                     /root/.pyenv/versions/anaconda3-5.1.0
 py35                  *  /root/.pyenv/versions/anaconda3-5.1.0/envs/py35
 {% endhighlight %}
