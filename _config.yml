@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "https://YoritaXP.github.io"
 twitter_username: Yorita_P
-github_username: YoritaXP
+github_username: YoritaP
 google_analytics: UA-115625516-1
 
 minima:
